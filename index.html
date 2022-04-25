@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet"/>
+    <title>Encriptador y Desencriptador de texto</title>
+  </head>
+  <body>
+    <div class="logoContainer">
+      <img class="imgSvg" src="images/Logo.png" alt="logo Alura" />
+    </div>
+    <h1 class="titulo">Encriptador y Desencriptador</h1>
+    <!-- inicio de flexeador -->
+    <section class="flexeador">
+      
+      <div class="sizePrincipal">
+        <textarea
+          class="ingress"
+          id="entrada"
+          cols="40"
+          placeholder="Ingrese el texto aquí"
+          ></textarea>
+        
+      
+        <div class="esteDiv">
+          <p class="mensajitoPequeño">
+            <img class="imgInfo" src="images/LogoInfo.png" alt="info"/>Solo letras minúsculas y sin acentos
+          </p>
+        </div>
+
+      
+      <div class="buttonsFlex">
+        <button class="botonCode" value="Codificar" onclick="Codificar()">
+          Encriptar
+        </button>
+        <button class="botonDecode" value="Decodificar" onclick="Decodificar()">
+          Desencriptar
+        </button>
+      </div>
+    </div>
+  
+      <div class="rectangleOne">
+        
+        <textarea class="response" id="salida"></textarea>
+        <button class="botonCopy" value="Copiar" onclick="Copiar()">Copiar Resultado</button>
+        <img class="imageDoll" src="images/Muñeco.png"  alt="vacio"/>
+        
+        <div class="sec-salida-info">
+          <p class="firstMessage">Ningún mensaje fue encontrado</p>
+          <p class="secondMessage">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+      </div>
+      
+    </section>
+    
+    <!-- fin de flexeador -->
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+  
+    <footer>
+      <p class="footerMessage"> Sitio web realizado por Claudio Miguel Olivera <br/><br/>E-mail: claudioolivera753@gmail.com </p>
+    </footer>
+
+
+</html>

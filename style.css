@@ -248,7 +248,6 @@ footer{
     .buttonsFlex,.botonCode {
         display: grid;
        margin:0 auto;
-       flex-direction: column;
        margin-bottom: 10px;
     }
     .rectangleOne{
